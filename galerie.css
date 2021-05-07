@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Tamma 2", cursive;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+a:visited {
+  color: red;
+}
+#galerieNav {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+#galerieNav h1 {
+  font-size: 4em;
+}
+
+#bigContainer {
+  height: auto;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-row-gap: 200px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.item {
+  height: auto;
+  width: 318.75px;
+  place-self: center;
+  display: grid;
+  grid-template-rows: 318.75px 80px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.itemImgDiv {
+  background-color: black;
+}
+.itemImgDiv img {
+  width: 100%;
+}
+.itemDescriptionDiv {
+  background-color: rgb(212, 27, 27);
+  color: white;
+  display: grid;
+  grid-template-rows: 40% auto;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.itemDescriptionMoreDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 500px) {
+  #galerieNav h1 {
+    font-size: 3.5em;
+  }
+  #galerieNav h2 {
+    margin-top: -20px;
+  }
+
+  #galerieNav h2 {
+    font-size: 1.2em;
+  }
+
+  #bigContainer {
+    width: 100%;
+    grid-row-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+@media only screen and (max-width: 390px) {
+  .item {
+    height: 370px;
+    width: 277.5px;
+    grid-template-rows: 277.5px auto;
+    margin-left: -40px;
+  }
+}

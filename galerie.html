@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Galeria tururilor 360°-Vizită orice imobil, oriunde, cănd vrei.
+    </title>
+    <meta
+      name="description"
+      content="Caută apartamentul potrivit pentru tine, vizită-l de oriunde ai fi."
+    />
+    <meta
+      name="keywords"
+      content="fotografie 360,tur virtual, promovare imobiliara, vanzare casa, publiciate apartamente, vanzare apartament, reclama apartament, recalama casa, creare de tur virtual"
+    />
+    <link rel="stylesheet" href="galerie.css" />
+    <link rel="icon" type="image/png" href="./logos/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179994620-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179994620-1');
+    </script>
+  </head>
+  <body>
+    <nav id="galerieNav">
+      <h1>Galeria</h1>
+      <h2>
+        ↓ Aici poți vedea lista completă a imobilelor scanate de CASA VIRTUALĂ ↓
+      </h2>
+    </nav>
+    <div id="bigContainer">
+        </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-firestore.js"></script>
+    <script src="galerie.js"></script>
+  </body>
+</html>

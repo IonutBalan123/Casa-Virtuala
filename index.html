@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0'" />
+    <title>Tururi virtuale 360° - Casa virtuală.</title>
+    <meta
+      name="description"
+      content="Crează-ți o versiune digitală a imobilului, promoveaza-ți casa,
+     apartamenul intr-un mod mai eficient."
+    />
+    <meta
+      name="keywords"
+      content="fotografie 360,tur virtual, promovare imobiliara, vanzare casa, publiciate apartamente, vanzare apartament, reclama apartament, recalama casa, creare de tur virtual"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./logos/logo.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179994620-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179994620-1');
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="logoDiv">
+        <img src="logos/logo.png" alt="" />
+      </div>
+    </nav>
+    <section class="hero">
+      <div id="heroContent">
+        <h1>Casa ta poate deveni virtuală</h1>
+        <h2>Alaturăte noii ere a afișării imobilelor pe internet.</h2>
+        <button onClick="window.location='/galerie'">Galerie</button>
+      </div>
+    </section>
+    <section class="avantaje">
+      <div class="containerAvantaje">
+        <div id="avantaj1" class="avantaj">
+          <div class="innerAvantaj">
+            <div class="avantajTitlu">
+              <h1>Rapiditate</h1>
+              <img src="img/clock.png" alt="" />
+            </div>
+            <div class="avantajBody">
+              O scanare completă durează intre
+              <span class="contrast">15</span> și
+              <span class="contrast">30</span> de minute.
+            </div>
+          </div>
+        </div>
+        <div id="avantaj2" class="avantaj">
+          <div class="innerAvantaj">
+            <div class="avantajTitlu">
+              <h1>Inovație</h1>
+              <img src="img/innovation.png" alt="" />
+            </div>
+            <div class="avantajBody">
+              <span class="contrast">98%</span> din imobilele listate nu au un
+              tur virtual disponibil!
+            </div>
+          </div>
+        </div>
+        <div id="avantaj3" class="avantaj">
+          <div class="innerAvantaj">
+            <div class="avantajTitlu">
+              <h1>Promovare</h1>
+              <img id="promo" src="img/promo.png" alt="" />
+            </div>
+            <div class="avantajBody" id="promoBody">
+              Turul virtual reprezintă una dintre cele mai
+              <span class="contrast">apreciate</span> și
+              <span class="contrast">eficiente</span> metode de promovare.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calculatePriceSection">
+      <div class="container">
+        <h1>Află prețul unui tur virtual!</h1>
+        <div id="calculator">
+          <input
+            type="number"
+            id="pret"
+            placeholder="suprafața imobilului"
+            autocomplete="off"
+          /><span>MP&sup2</span>
+        </div>
+        <button id="calculeaza">Calculează</button>
+        <p id="rezultatPret"></p>
+ 
+        <p id="discount"></p>
+      </div>
+    </section>
+    <section id="linksDiv">
+      <div id="linksContainer">
+        <div id="phoneLink" class="links">
+          <a href="tel:0758-195-714"
+            ><img src="img/phoneWhite.png" alt="img"
+          /></a>
+        </div>
+        <div id="webPhone" onclick="showNumber()">
+          <img src="img/phoneWhite.png" alt="img" />
+        </div>
+        <div id="number">
+          <span class="arrow">&#8637;</span> Contactează-ne
+          <span class="arrow">&#8640;</span>
+        </div>
+        <div id="messengerLink" class="links">
+          <a href="http://m.me/casavirtuala"
+            ><img src="img/messWhite.png" alt="img"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

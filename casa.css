@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  cursor: default;
+}
+a {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: red;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.adresaDiv {
+  display: flex;
+  align-items: center;
+}
+.mainContainer {
+  height: 200vh;
+  width: 65%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 4% 40% auto 35%;
+  background-color: rgb(250, 250, 250);
+}
+.iframeDiv {
+  background-color: black;
+}
+.iframeDiv iframe {
+  width: 100%;
+  height: 100%;
+}
+.detaliiDiv {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.detalii1,
+.detalii2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#myMap {
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 40px;
+  border: 7px solid black;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .mainContainer {
+    height: 203vh;
+    width: 98%;
+    grid-template-rows: 4% 37% auto 30%;
+  }
+  .adresaDiv {
+    font-size: 0.6em;
+  }
+  .detalii1 h2 {
+    font-size: 1.08em;
+  }
+  .detalii2 h2 {
+    font-size: 1.08em;
+  }
+  #myMap {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

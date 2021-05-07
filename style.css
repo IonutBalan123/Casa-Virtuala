@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Tamma 2", cursive;
+  cursor: default;
+  font-family: "Titillium Web", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+nav img {
+  margin-top: 10px;
+  width: 115px;
+}
+
+.hero {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.13),
+      rgba(66, 39, 39, 0.6)
+    ),
+    url(img/heroImage.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+#heroContent {
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+#heroContent h1 {
+  font-size: 3.8em;
+}
+#heroContent h2 {
+  font-size: 1.8em;
+}
+.calculatePriceSection {
+  height: 380px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+}
+.calculatePriceSection h1 {
+  text-align: center;
+  font-size: 3em;
+}
+#calculator {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+#pret {
+  margin-top: 50px;
+  width: 340px;
+  height: 50px;
+  border: none;
+
+  font-size: 2em;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 50px;
+  border-bottom: 3px solid black;
+  background-color: transparent;
+}
+
+#pret::placeholder {
+  text-align: center;
+  color: black;
+}
+#pret:focus {
+  border: 0;
+}
+#calculator span {
+  font-size: 2em;
+}
+#calculeaza {
+  margin-top: 40px;
+  padding: 0px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.7em;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+#rezultatPret {
+  margin-top: 10px;
+  font-size: 2.5em;
+}
+#discount {
+  font-size: 2em;
+}
+
+.avantaje {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avantaj {
+  width: 400px;
+  height: 90%;
+}
+.avantaj h1 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-top: 15px;
+  color: black;
+}
+.avantajTitlu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avantajTitlu img {
+  width: 50px;
+  margin-left: 10px;
+}
+.innerAvantaj {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  height: 100%;
+}
+.avantajBody {
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.containerAvantaje {
+  width: 75%;
+  margin: 0 auto;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: flex-start;
+  justify-items: center;
+}
+.containerAvantaje img {
+  margin-top: 15px;
+}
+.contrast {
+  font-size: 1.5em;
+  color: red;
+}
+#linksDiv {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+#linksContainer {
+  width: 25%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#phoneLink {
+  display: none;
+}
+#webPhone {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+#webPhone img {
+  width: 75%;
+}
+#number {
+  font-size: 2em;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 20px;
+}
+
+#phoneLink img {
+  width: 80%;
+}
+#messengerLink a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#messengerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#messengerLink img {
+  width: 82%;
+}
+
+#promo {
+  width: 67px;
+}
+
+#heroContent button {
+  margin-top: 75px;
+  border: 0;
+  font-size: 2em;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+
+  padding: 0 10px;
+}
+button {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+.priceColor {
+  color: rgb(250, 0, 0);
+  font-size: 1.7em;
+}
+
+@media only screen and (max-width: 600px) {
+  nav img {
+    margin-top: 10px;
+    width: 110px;
+  }
+  .hero {
+    height: 90vh;
+  }
+  #phoneLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #phoneLink a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #webPhone {
+    display: none;
+  }
+  .calculatePriceSection {
+    margin-top: 15px;
+    height: 250px;
+  }
+  #pret {
+    width: 240px;
+    height: 30px;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  #pret::placeholder {
+    text-align: center;
+  }
+  #calculator span {
+    font-size: 23px;
+  }
+  #calculeaza {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 0px 5px;
+  }
+  #rezultatPret {
+    margin-top: 0px;
+    font-size: 2em;
+  }
+  #discount {
+    font-size: 1.2em;
+    margin-top: -10px;
+  }
+  .avantaj {
+    width: 90%;
+    height: 100%;
+    border-bottom: 5px solid black;
+  }
+  .containerAvantaje {
+    width: 80%;
+    margin: 0 auto;
+    height: 99%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+    align-items: center;
+    justify-items: center;
+  }
+  .avantaje {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innerAvantaj {
+    grid-template-rows: 20% 80%;
+    width: 100%;
+  }
+  .links {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+  }
+  #linksContainer {
+    width: 93%;
+    height: 4vh;
+  }
+  .avantajTitlu {
+    margin-top: 30px;
+  }
+  .avantajTitlu img {
+    width: 40px;
+    margin-top: 20px;
+  }
+  .avantajBody {
+    margin-top: 30px;
+    margin-bottom: -30px;
+    font-size: 1.6em;
+    line-height: 45px;
+  }
+  #heroContent {
+    height: 50%;
+    width: 90%;
+  }
+  #heroContent button {
+    border: 0;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+
+    padding: 0 10px;
+  }
+  #heroContent h1 {
+    font-size: 2.8em;
+    line-height: 65px;
+  }
+  #heroContent h2 {
+    font-size: 1.3em;
+  }
+  #number {
+    font-size: 1.6em;
+    transition: 0.3s ease-in;
+    margin-top: -5px;
+  }
+  #linksDiv {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+  }
+  #logo {
+    width: 80px;
+    height: auto;
+  }
+  #promo {
+    margin-left: 2px !important;
+  }
+
+  .calculatePriceSection h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .avantaj h1 {
+    font-size: 2.6em;
+  }
+  .avantajBody {
+    font-size: 1.45em;
+  }
+  .contrast {
+    font-size: 1.47em;
+    color: red;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1420px) {
+  #number {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .avantajBody {
+    font-size: 1.7em;
+  }
+  #linksContainer {
+    width: 30%;
+  }
+}
