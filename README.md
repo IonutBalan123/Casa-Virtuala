@@ -15,3 +15,5 @@
         <li>Dynamic routing</li>
     </ul>
 </ul>
+
+<b><i>The code is missing the firebase configuration for security porpouses</i></b>
